@@ -44,7 +44,7 @@ $ refreshenv
 ```bash
 $ choco install -y git
 $ refreshenv
-$ git --version
+$ where git
 ```
 
 ## 安装**Docker**运行环境
@@ -52,7 +52,7 @@ $ git --version
 ```bash
 $ choco install -y docker-desktop
 $ refreshenv
-$ docker --version
+$ where docker docker-compose
 ```
 
 ## 安装**Node.js**运行环境
@@ -60,7 +60,7 @@ $ docker --version
 ```bash
 $ choco install -y nodejs yarn typescript
 $ refreshenv
-$ yarn --version
+$ where node yarn tsc
 ```
 
 ## 安装**PHP**运行环境
@@ -68,7 +68,7 @@ $ yarn --version
 ```bash
 $ choco install -y php composer
 $ refreshenv
-$ composer --version
+$ where php composer
 ```
 
 ## 安装**Python**运行环境
@@ -76,7 +76,7 @@ $ composer --version
 ```bash
 $ choco install -y python
 $ refreshenv
-$ python --version
+$ where python pip
 ```
 
 ## 安装**Go**运行环境
@@ -84,7 +84,7 @@ $ python --version
 ```bash
 $ choco install -y golang
 $ refreshenv
-$ go version
+$ where go
 ```
 
 ## 安装**Java**运行环境
@@ -92,10 +92,15 @@ $ go version
 ```bash
 $ choco install -y openjdk
 $ refreshenv
-$ java --version
+$ where java
 ```
 
-## 常用应用列表
+## 常用命令行应用
 
-* graphviz plantuml依赖
+* graphviz 绘图
 * pandoc 文档转换
+
+## 常用图形界面应用
+
+* tortoisegit Git客户端
+* gitbook-editor Gitbook编辑器
