@@ -1,5 +1,7 @@
 # 云蚁技术部开发工具
 
+开发需要的各种工具整合（Shell， 脚本， 模块管理， 任务管理）
+
 ## Chocolatey基本操作
 
 将项目路径添加到系统PATH环境变量
@@ -76,10 +78,10 @@ $ where php composer
 ```bash
 $ choco install -y python
 $ refreshenv
-$ where python pip
+$ where python py pip
 ```
 
-## 安装**Go**运行环境
+## 安装**Golang**运行环境
 
 ```bash
 $ choco install -y golang
@@ -100,8 +102,9 @@ $ where java
 * graphviz 绘图
 * pandoc 文档转换
 
-## 常用图形界面应用
+## 常用npm模块
 
-* tortoisegit Git客户端
-* gitbook-editor Gitbook编辑器
-* anydesk 远程桌面
+## 常用composer模块
+
+## 常用pip模块
+
