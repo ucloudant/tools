@@ -1,0 +1,8 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "http://git.ucloudant.com/ucloudant/tools.git",
+  "author": "shenyu <jacky.shenyu@gmail.com>",
+  "license": "MIT"
+}
