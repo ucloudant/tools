@@ -62,7 +62,7 @@ $ where docker docker-compose
 ```bash
 $ choco install -y nodejs yarn typescript
 $ refreshenv
-$ where node yarn tsc
+$ where node npm yarn tsc
 ```
 
 ## 安装**PHP**运行环境
@@ -95,6 +95,38 @@ $ where go
 $ choco install -y openjdk
 $ refreshenv
 $ where java
+```
+
+## 安装**Ruby**运行环境
+
+```bash
+$ choco install -y ruby
+$ refreshenv
+$ where ruby
+```
+
+## 安装**Perl**运行环境
+
+```bash
+$ choco install -y strawberryperl
+$ refreshenv
+$ where perl
+```
+
+## 安装**Lua**运行环境
+
+```bash
+$ choco install -y lua
+$ refreshenv
+$ where lua
+```
+
+## 安装**Common Lisp**运行环境
+
+```bash
+$ choco install -y clisp
+$ refreshenv
+$ where clisp
 ```
 
 ## 常用命令行应用
