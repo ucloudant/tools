@@ -34,6 +34,7 @@ def mkdir(path_list, head=''):
 
 
 def save_html(file_path, file_content):
+    print(file_path)
     file_name = file_path.split('/')[-1]
     path_list = file_path.split('/')[:-1]
     mkdir(path_list)
@@ -63,6 +64,6 @@ def get_base_html():
 
 
 if __name__ == '__main__':
-    save_html('base.html', get_base_html())
+    save_html('./base.html', get_base_html())
     uri_list = get_uri_list()
     get_text('https://developers.weixin.qq.com/miniprogram/dev/api-backend/', uri_list)
