@@ -136,7 +136,12 @@ $ where clisp
 
 ## 常用npm模块
 
+* underscore 通用基础函数库 ★★★★☆
+* lodash 通用基础函数库 ★★★★★
+
 ## 常用composer模块
+
+* lodash-php/lodash-php 从lodash.js移植而来的通用基础函数库 ★★★★★
 
 ## 常用pip模块
 
