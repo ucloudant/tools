@@ -1,6 +1,6 @@
 @echo off
-call choco list --local | find /i "msys2" > nul
+call pacman -Q grep 2>nul | find /i "grep" > nul
 if errorlevel 1 (
-call choco install -y msys2
+call echo yes | pacman -S grep
 )
 %ChocolateyToolsLocation%\msys64\usr\bin\grep.exe %*

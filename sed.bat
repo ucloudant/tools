@@ -1,6 +1,6 @@
 @echo off
-call choco list --local | find /i "msys2" > nul
+call pacman -Q sed 2>nul | find /i "sed" > nul
 if errorlevel 1 (
-call choco install -y msys2
+call echo yes | pacman -S sed
 )
 %ChocolateyToolsLocation%\msys64\usr\bin\sed.exe %*
