@@ -161,8 +161,8 @@ $ where lua
 ## 常用pip模块
 
 
-## wechat_doc_spoder.py使用教程
+## wechat_doc_spider.py使用教程
 
 ```bash
-$ python wechat_doc_spoder.py https://developers.weixin.qq.com/miniprogram/dev/api-backend/ ./doc/backend
+$ python wechat_doc_spider.py https://developers.weixin.qq.com/miniprogram/dev/api-backend/ ./doc/backend
 ```
