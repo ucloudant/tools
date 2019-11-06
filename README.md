@@ -65,8 +65,9 @@ $ where docker docker-compose
 ## 安装**Node.js**运行环境
 
 ```bash
-$ choco install -y nodejs yarn typescript
+$ choco install -y nodejs
 $ refreshenv
+$ npm i -g yarn typescript
 $ where node npm yarn tsc
 ```
 
@@ -90,6 +91,8 @@ $ refreshenv
 $ where python py pip
 ```
 
+> Tools已整合Python环境
+
 ## 安装**Golang**运行环境
 
 ```bash
@@ -97,6 +100,8 @@ $ choco install -y golang
 $ refreshenv
 $ where go
 ```
+
+> Tools已整合Go环境
 
 ## 安装**Java**运行环境
 
@@ -106,6 +111,8 @@ $ refreshenv
 $ where java
 ```
 
+> Tools已整合Java环境
+
 ## 安装**Ruby**运行环境
 
 ```bash
@@ -114,13 +121,18 @@ $ refreshenv
 $ where ruby
 ```
 
+> Tools已整合Ruby环境
+
 ## 安装**Perl**运行环境
 
 ```bash
-$ choco install -y strawberryperl
-$ refreshenv
+$ choco install -y msys2
+$ msys2
+$ yes | pacman -S perl
 $ where perl
 ```
+
+> Tools已整合Perl环境
 
 ## 安装**Lua**运行环境
 
@@ -130,13 +142,7 @@ $ refreshenv
 $ where lua
 ```
 
-## 安装**Common Lisp**运行环境
-
-```bash
-$ choco install -y clisp
-$ refreshenv
-$ where clisp
-```
+> Tools已整合Lua环境
 
 ## 常用命令行应用
 
