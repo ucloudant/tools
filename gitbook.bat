@@ -1,8 +1,16 @@
 @echo off
-setlocal
-if not exist %ALLUSERSPROFILE%\chocolatey\bin\dot.exe (
-  choco install -y graphviz
+call choco list --local | find /i "openjdk" > nul
+if errorlevel 1 (
+call choco install -y openjdk
+call refreshenv
 )
-cmd /c yarn install
-cmd /c yarn gitbook install
-cmd /c yarn gitbook %*
+call choco list --local | find /i "graphviz" > nul
+if errorlevel 1 (
+call choco install -y graphviz
+call refreshenv
+)
+call where gitbook.cmd 2>&1 | find /i "gitbook.cmd" > nul
+if errorlevel 1 (
+call npm i -g gitbook-cli
+)
+gitbook.cmd %*
