@@ -18,9 +18,10 @@ $ choco list [app] [--local]
 
 * -y 静默安装
 * --force 重新安装
+* --proxy=PROXY 设置代理
 
 ```bash
-$ choco install [app] [-y] [--force]
+$ choco install [app] [-y] [--force] [--proxy=PROXY]
 ```
 
 卸载应用
@@ -49,6 +50,8 @@ $ refreshenv
 $ where git
 ```
 
+> Tools已整合Git环境
+
 ## 安装**Docker**运行环境
 
 ```bash
@@ -56,6 +59,8 @@ $ choco install -y docker-desktop
 $ refreshenv
 $ where docker docker-compose
 ```
+
+> Tools已整合Docker环境
 
 ## 安装**Node.js**运行环境
 
@@ -65,6 +70,8 @@ $ refreshenv
 $ where node npm yarn tsc
 ```
 
+> Tools已整合Node.js环境
+
 ## 安装**PHP**运行环境
 
 ```bash
@@ -72,6 +79,8 @@ $ choco install -y php composer
 $ refreshenv
 $ where php composer
 ```
+
+> Tools已整合PHP环境
 
 ## 安装**Python**运行环境
 

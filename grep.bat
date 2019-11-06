@@ -1,6 +1,6 @@
 @echo off
-setlocal
-if not exist %ALLUSERSPROFILE%\chocolatey\bin\grep.exe (
-  choco install -y grep
+call choco list --local | find /i "msys2" > nul
+if errorlevel 1 (
+call choco install -y msys2
 )
-%ALLUSERSPROFILE%\chocolatey\bin\grep.exe %*
+%ChocolateyToolsLocation%\msys64\usr\bin\grep.exe %*
