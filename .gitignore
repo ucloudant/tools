@@ -91,3 +91,4 @@ typings/
 ### Js
 # IDE
 .idea/
+/composer.phar

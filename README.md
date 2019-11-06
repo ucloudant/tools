@@ -76,9 +76,9 @@ $ where node npm yarn tsc
 ## 安装**PHP**运行环境
 
 ```bash
-$ choco install -y php composer
+$ choco install -y php
 $ refreshenv
-$ where php composer
+$ where php
 ```
 
 > Tools已整合PHP环境
