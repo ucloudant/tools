@@ -5,12 +5,7 @@
   "repository": "http://git.ucloudant.com/ucloudant/tools.git",
   "author": "shenyu <jacky.shenyu@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "gitbook-cli": "^2.3.2",
-    "js-joda": "^1.11.0",
-    "jsonpath": "^1.0.2",
-    "lodash": "^4.17.15",
-    "underscore": "^1.9.1",
-    "yaml": "^1.7.2"
+  "dependencies": {
+    "commander": "^4.0.1"
   }
 }
