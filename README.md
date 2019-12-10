@@ -144,10 +144,20 @@ $ where lua
 
 > Tools已整合Lua环境
 
+## 安装**Visual C\+\+ 15.0**运行环境
+
+```bash
+$ choco install -y visualstudio2017community visualstudio2017-workload-nativedesktop
+$ vcvars64
+```
+
+> Tools已整合Visual C++ 15.0环境
+
 ## 常用命令行应用
 
 * graphviz 绘图
 * pandoc 文档转换
+* ninja 构建工具
 
 ## 常用npm模块
 
