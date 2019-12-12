@@ -42,143 +42,164 @@ $ choco upgrade [app|all] [-y]
 $ refreshenv
 ```
 
-## 安装**Git**应用
+## 运行环境/编译环境支持
+
+### Node.js
+
+**Node.js**运行环境
 
 ```bash
-$ choco install -y git
-$ refreshenv
-$ where git
+node --version
 ```
 
-> Tools已整合Git环境
+### PHP
 
-## 安装**Docker**运行环境
+**PHP**运行环境
 
 ```bash
-$ choco install -y docker-desktop
-$ refreshenv
-$ where docker docker-compose
+php --version
 ```
 
-> Tools已整合Docker环境
+### Python
 
-## 安装**Node.js**运行环境
+**Python**运行环境
 
 ```bash
-$ choco install -y nodejs
-$ refreshenv
-$ npm i -g yarn typescript
-$ where node npm yarn tsc
+py -2 --version
+py -3 --version
 ```
 
-> Tools已整合Node.js环境
+### Golang
 
-## 安装**PHP**运行环境
+**Go**运行环境
 
 ```bash
-$ choco install -y php
-$ refreshenv
-$ where php
+go version
 ```
 
-> Tools已整合PHP环境
+### Java
 
-## 安装**Python**运行环境
+**Java**运行环境
 
 ```bash
-$ choco install -y python
-$ refreshenv
-$ where python py pip
+java --version
 ```
 
-> Tools已整合Python环境
+### Ruby
 
-## 安装**Golang**运行环境
+**Ruby**运行环境
 
 ```bash
-$ choco install -y golang
-$ refreshenv
-$ where go
+ruby --version
 ```
 
-> Tools已整合Go环境
+### Perl
 
-## 安装**Java**运行环境
+**Perl**运行环境
 
 ```bash
-$ choco install -y openjdk
-$ refreshenv
-$ where java
+perl --version
 ```
 
-> Tools已整合Java环境
+### Lua
 
-## 安装**Ruby**运行环境
+**Lua**运行环境
 
 ```bash
-$ choco install -y ruby
-$ refreshenv
-$ where ruby
+lua -v
 ```
 
-> Tools已整合Ruby环境
+### VC14
 
-## 安装**Perl**运行环境
+**Visual C++ 14**编译环境
 
 ```bash
-$ choco install -y msys2
-$ msys2
-$ yes | pacman -S perl
-$ where perl
+vc14-x64
 ```
 
-> Tools已整合Perl环境
+### VC15
 
-## 安装**Lua**运行环境
+**Visual C++ 15**编译环境
 
 ```bash
-$ choco install -y lua
-$ refreshenv
-$ where lua
+vc15-x64
 ```
 
-> Tools已整合Lua环境
+## 常用工具
 
-## 安装**Visual C\+\+ 14.0**运行环境
+### Docker
+
+**Docker**命令行工具
 
 ```bash
-$ choco install -y visualstudio2015community -packageParameters "--Features NativeLanguageSupport_VCV1"
+docker --version
 ```
 
-## 安装**Visual C\+\+ 15.0**运行环境
+### Docker Compose
+
+**Docker Compose**命令行工具
 
 ```bash
-$ choco install -y visualstudio2017community visualstudio2017-workload-nativedesktop
-$ vcvars64
+docker-compose --version
 ```
 
-> Tools已整合Visual C++ 15.0环境
+### Ninja
 
-## 常用命令行应用
+构建工具
 
-* graphviz 绘图
-* pandoc 文档转换
-* ninja 构建工具
+```bash
+ninja --version
+```
 
-## 常用npm模块
+### Symfony
 
-* underscore 通用基础函数库 ★★★★☆
-* lodash 通用基础函数库 ★★★★★
+**Symfony**命令行工具
 
-## 常用composer模块
+```bash
+symfony -V
+```
 
-* lodash-php/lodash-php 从lodash.js移植而来的通用基础函数库 ★★★★★
+### Pandoc
 
-## 常用pip模块
+文档转换工具
 
+```bash
+pandoc --version
+```
 
-## wechat_doc_spider.py使用教程
+### Standard JS
+
+Standard代码规范
+
+```bash
+standard --version
+```
+
+### GraphViz
+
+绘图工具
+
+```bash
+dot -V
+```
+
+### Wechat Doc Spider
+
+微信文档抓取工具
 
 ```bash
 $ python wechat_doc_spider.py https://developers.weixin.qq.com/miniprogram/dev/api-backend/ ./doc/backend
 ```
+
+## 模块
+
+## Node.js
+
+* underscore 通用基础函数库 ★★★★☆
+* lodash 通用基础函数库 ★★★★★
+
+## PHP
+
+* lodash-php/lodash-php 从lodash.js移植而来的通用基础函数库 ★★★★★
+
+## Python
