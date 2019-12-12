@@ -144,6 +144,12 @@ $ where lua
 
 > Tools已整合Lua环境
 
+## 安装**Visual C\+\+ 14.0**运行环境
+
+```bash
+$ choco install -y visualstudio2015community -packageParameters "--Features NativeLanguageSupport_VCV1"
+```
+
 ## 安装**Visual C\+\+ 15.0**运行环境
 
 ```bash
