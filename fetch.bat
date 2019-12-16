@@ -1,0 +1,7 @@
+@echo off
+if not exist %~dp0depot_tools\fetch.py (
+call git clone https://code.aliyun.com/ishenyu/google-depot_tools.git depot_tools
+)
+set path=%path%;%~dp0depot_tools
+py -2 %~dp0depot_tools\fetch.py %*
+
