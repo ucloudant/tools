@@ -1,6 +1,7 @@
 @echo off
-if not exist %~dp0depot_tools\ninja.exe (
-call git clone https://code.aliyun.com/ishenyu/google-depot_tools.git depot_tools
+call choco list --local | find /i "ninja" > nul
+if errorlevel 1 (
+call choco install -y ninja
+call refreshenv
 )
-%~dp0depot_tools\ninja.exe %*
-
+ninja.exe %*
